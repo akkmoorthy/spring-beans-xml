@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanLifecycleInitAndDestroyExample {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-application-context.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans-lifecycle.xml");
         System.out.println("Lifecyle");
         Octagon obj = (Octagon) context.getBean("octagon");
         obj.draw();

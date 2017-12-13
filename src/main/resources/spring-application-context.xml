@@ -110,8 +110,4 @@
         <constructor-arg index="1" value="10"/>
     </bean>
 
-    <!-- This explains bean lifecycle examples -->
-    <bean id="octagon" class="com.springexamples.entity.Octagon" destroy-method="cleanUp"
-          init-method="myInit">
-    </bean>
 </beans>
