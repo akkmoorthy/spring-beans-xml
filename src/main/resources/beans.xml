@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- Singleton Scopes -->
+    <bean id = "singletonScopeBean" class = "com.springexamples.entity.Triangle" scope="singleton">
+        <constructor-arg index="0" value="Equilateral"/>
+        <constructor-arg index="1" value="10"/>
+    </bean>
+
+    <!-- Testing Lazy Initialization -->
+    <bean id="displayMessageBean" class="com.springexamples.entity.DisplayMessage">
+        <property name="message" value="Application Context Example"/>
+    </bean>
+
+</beans>
